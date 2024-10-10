@@ -1,4 +1,5 @@
-import random
+# Написать игру «камень-ножницы-бумага»
+import rando
 
 def get_user_choice():
     while True:
