@@ -8,5 +8,11 @@ def calculate_age():
             break  
         except ValueError:
             print("Неверный формат даты. Пожалуйста, используйте формат дд/мм/гггг.")
+    today = datetime.now()
+    age = today.year - birth_date.year
+
+    
+    if (today.month, today.day) < (birth_date.month, birth_date.day):
+        age -= 1  
 
 
